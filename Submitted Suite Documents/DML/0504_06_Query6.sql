@@ -6,3 +6,4 @@ AND satEndTime >= '22:00:00'
 AND sunStartTime <= '18:00:00' 
 AND sunEndTime >=  '23:00:00'
 AND resTransactionType='delivery'
+
