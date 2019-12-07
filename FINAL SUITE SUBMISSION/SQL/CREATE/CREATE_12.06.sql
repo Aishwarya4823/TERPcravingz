@@ -77,7 +77,7 @@ CREATE TABLE dbo.Restaurant(
     CONSTRAINT pk_Restaurant_resId PRIMARY KEY (resId),
     CONSTRAINT fk_Restaurant_stopId FOREIGN KEY (stopId)
 		REFERENCES dbo.Stop(stopId)
-		    ON DELETE CASCADE 
+		    ON DELETE NO ACTION 
             ON UPDATE NO ACTION
         );
 
@@ -108,10 +108,10 @@ CREATE TABLE dbo.Review(
    CONSTRAINT pk_Review_revId PRIMARY KEY (revId),
    CONSTRAINT fk_Review_cusId FOREIGN KEY(cusId)
         REFERENCES Customer(cusId)
-		    ON DELETE NO ACTION
+		    ON DELETE CASCADE
             ON UPDATE CASCADE,
     CONSTRAINT fk_Review_resId FOREIGN KEY(resId)
 		REFERENCES Restaurant(resId)
-		    ON DELETE NO ACTION 
-            ON UPDATE CASCADE
+		    ON DELETE CASCADE 
+            ON UPDATE NO ACTION
 );
