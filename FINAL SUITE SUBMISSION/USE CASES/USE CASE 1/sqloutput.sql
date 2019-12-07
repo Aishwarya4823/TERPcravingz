@@ -1,3 +1,4 @@
+--What is the number of restaurants nearest to each stop?
 SELECT r.stopId AS 'Stop ID' , s.stopName AS 'Stop Name', COUNT(r.resId) AS 'Number of restaurants'
 FROM Restaurant r, Stop s
 WHERE r.stopId = s.stopId
