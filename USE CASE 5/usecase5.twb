@@ -2885,7 +2885,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Sheet 14'>
+    <worksheet name='Delivery Service Providing Restaurant Classification'>
       <layout-options>
         <title>
           <formatted-text>
@@ -2948,7 +2948,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.5' source-height='44'>
-    <window class='worksheet' maximized='true' name='Sheet 14'>
+    <window class='worksheet' maximized='true' name='Delivery Service Providing Restaurant Classification'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2998,7 +2998,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='192' name='Sheet 14' width='192'>
+    <thumbnail height='192' name='Delivery Service Providing Restaurant Classification' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
       AAAgAElEQVR4nO29V3AdWZrn90tzPe6F994QIEHQe1M0RVOGxTJtp2fUE6NWz/bOKEKhCEk7
       oZAeFFqtXlYbWkmxoZW6R9sT293aUW9VF8uQLLoqehJ0AEl4790FrsP1mXn0AJJFiwKKBYJF
