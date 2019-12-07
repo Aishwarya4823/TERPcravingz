@@ -77,7 +77,7 @@ CREATE TABLE dbo.Restaurant(
     CONSTRAINT pk_Restaurant_resId PRIMARY KEY (resId),
     CONSTRAINT fk_Restaurant_stopId FOREIGN KEY (stopId)
 		REFERENCES dbo.Stop(stopId)
-		    ON DELETE CASCADE 
+		    ON DELETE NO ACTION 
             ON UPDATE NO ACTION
         );
 
@@ -98,20 +98,20 @@ CREATE TABLE dbo.Belong(
 
 
 
- CREATE TABLE dbo.Review(
+CREATE TABLE dbo.Review(
    revId     CHAR(22) NOT NULL,
    revRating INTEGER,
-   revText   VARCHAR(170),
    revDate DATETIME,
+   revText   VARCHAR(170),
    cusId CHAR(22),
    resId CHAR(22),
    CONSTRAINT pk_Review_revId PRIMARY KEY (revId),
    CONSTRAINT fk_Review_cusId FOREIGN KEY(cusId)
         REFERENCES Customer(cusId)
-		    ON DELETE NO ACTION
-            ON UPDATE NO ACTION,
+		    ON DELETE CASCADE
+            ON UPDATE CASCADE,
     CONSTRAINT fk_Review_resId FOREIGN KEY(resId)
 		REFERENCES Restaurant(resId)
-		    ON DELETE NO ACTION 
+		    ON DELETE CASCADE 
             ON UPDATE NO ACTION
 );
