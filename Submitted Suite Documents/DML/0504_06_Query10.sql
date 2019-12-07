@@ -1,3 +1,4 @@
+--Need to remove write table
 --10.What are the names, addresses, phone numbers for restaurants that have high ranking AND are open on the weekend and has Review that includes: family OR friends?
 SELECT r.resId,r.resName,r.resStreet, r.resCity,r.resState,r.resPhoneNo, r.resStars, r.resPrice
 FROM Restaurant r,review e,write w, (
